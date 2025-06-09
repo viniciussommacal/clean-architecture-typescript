@@ -2,7 +2,7 @@ import { config } from 'dotenv';
 config();
 
 import express from 'express';
-import assistantController from './infrastructure/controllers/AssistantController';
+import assistantController from './infrastructure/controller/AssistantController';
 
 const app = express();
 const port = process.env.PORT;

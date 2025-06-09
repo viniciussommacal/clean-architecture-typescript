@@ -7,7 +7,7 @@ export default class Question {
     this.timestamp = new Date();
   }
 
-  validate(): this {
+  validate(): void {
     if (!this.content || this.content.trim().length === 0) {
       throw new DomainException('Question cannot be empty');
     }
@@ -15,7 +15,5 @@ export default class Question {
     if (this.content.length > 1000) {
       throw new DomainException('Question too long (max: 1000 characters)');
     }
-
-    return this;
   }
 }

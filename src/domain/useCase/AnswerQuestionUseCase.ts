@@ -1,6 +1,6 @@
 import LLMGateway from '../gateway/LLMGateway';
-import Question from '../entities/Question';
-import CatalogRepository from '../repositories/CatalogRepository';
+import Question from '../entity/Question';
+import CatalogRepository from '../repository/CatalogRepository';
 
 export default class AnswerQuestionUseCase {
   constructor(

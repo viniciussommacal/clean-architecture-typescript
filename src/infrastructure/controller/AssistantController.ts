@@ -1,13 +1,13 @@
 import { HttpStatus } from '../utils/HttpStatus';
 import { Router, Request, Response } from 'express';
-import AnswerQuestionUseCase from '../../domain/usecases/AnswerQuestionUseCase';
+import AnswerQuestionUseCase from '../../domain/useCase/AnswerQuestionUseCase';
 import DomainException from '../../domain/exception/DomainException';
-import CatalogRepository from '../data/CatalogRepository';
+import CatalogJsonRepository from '../repository/CatalogJsonRepository';
 import OpenAIGateway from '../gateway/OpenAIGateway';
 
 const answerQuestionUseCase = new AnswerQuestionUseCase(
   new OpenAIGateway(),
-  new CatalogRepository(),
+  new CatalogJsonRepository(),
 );
 
 const router = Router();
