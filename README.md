@@ -1,4 +1,4 @@
-# Clean Architecture TypeScript
+# Clean architecture com typeScript
 
 ## 📚 Sobre
 
@@ -21,8 +21,8 @@ sobre a loja de eletrônicos TESLA e consulta produtos em uma base de dados est�
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/viniciussommacal/clean-architeture-typescript.git
-   cd clean-architeture-typescript
+   git clone https://github.com/viniciussommacal/clean-architecture-typescript.git
+   cd clean-architecture-typescript
    ```
 
 2. Instale as dependências:
