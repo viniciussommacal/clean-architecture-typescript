@@ -1,8 +1,8 @@
-import CatalogJsonRepository from '../../../infrastructure/repository/CatalogJsonRepository';
-import ItemCatalog from '../../../domain/entity/ItemCatalog';
+import CatalogJsonRepository from '../../../../infrastructure/repositories/CatalogJsonRepository';
+import ItemCatalog from '../../../../domain/entities/ItemCatalog';
 
 // Mock do arquivo JSON
-jest.mock('../../../infrastructure/data/catalog.json', () => [
+jest.mock('../../../../infrastructure/data/catalog.json', () => [
   { descricao: 'Resistor 1kΩ 1/4W', valor: 0.15 },
   { descricao: 'Capacitor cerâmico 100nF', valor: 0.1 },
   { descricao: 'Transistor NPN BC547', valor: 0.5 },

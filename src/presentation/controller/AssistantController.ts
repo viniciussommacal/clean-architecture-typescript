@@ -1,9 +1,9 @@
-import { HttpStatus } from '../utils/HttpStatus';
+import { HttpStatus } from '../../infrastructure/utils/HttpStatus';
 import { Router, Request, Response } from 'express';
-import AnswerQuestionUseCase from '../../domain/useCase/AnswerQuestionUseCase';
-import DomainException from '../../domain/exception/DomainException';
-import CatalogJsonRepository from '../repository/CatalogJsonRepository';
-import OpenAIGateway from '../gateway/OpenAIGateway';
+import AnswerQuestionUseCase from '../../application/usecases/AnswerQuestionUseCase';
+import DomainException from '../../domain/exceptions/DomainException';
+import CatalogJsonRepository from '../../infrastructure/repositories/CatalogJsonRepository';
+import OpenAIGateway from '../../infrastructure/gateways/OpenAIGateway';
 
 const answerQuestionUseCase = new AnswerQuestionUseCase(
   new OpenAIGateway(),

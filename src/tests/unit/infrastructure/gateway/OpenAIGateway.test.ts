@@ -1,4 +1,4 @@
-import OpenAIGateway from '../../../infrastructure/gateway/OpenAIGateway';
+import OpenAIGateway from '../../../../infrastructure/gateways/OpenAIGateway';
 import OpenAI from 'openai';
 
 jest.mock('openai');

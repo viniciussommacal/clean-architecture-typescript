@@ -1,4 +1,4 @@
-import DomainException from '../exception/DomainException';
+import DomainException from '../exceptions/DomainException';
 
 export default class Question {
   public readonly timestamp: Date;

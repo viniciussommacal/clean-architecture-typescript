@@ -1,5 +1,5 @@
-import CatalogRepository from '../../domain/repository/CatalogRepository';
-import ItemCatalog from '../../domain/entity/ItemCatalog';
+import CatalogRepository from '../../domain/repositories/CatalogRepository';
+import ItemCatalog from '../../domain/entities/ItemCatalog';
 import catalog from '../data/catalog.json';
 
 export default class CatalogJsonRepository implements CatalogRepository {

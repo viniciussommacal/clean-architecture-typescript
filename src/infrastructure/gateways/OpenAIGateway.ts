@@ -1,5 +1,5 @@
-import LLMGateway from '../../domain/gateway/LLMGateway';
-import OpenAIMessage, { Role } from '../dto/OpenAIMessage';
+import LLMGateway from '../../domain/gateways/LLMGateway';
+import OpenAIMessage, { Role } from '../../application/dto/OpenAIMessage';
 import OpenAI from 'openai';
 
 export default class OpenAIGateway implements LLMGateway {

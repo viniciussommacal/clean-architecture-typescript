@@ -1,5 +1,5 @@
-import Question from '../../../domain/entity/Question';
-import DomainException from '../../../../src/domain/exception/DomainException';
+import Question from '../../../../domain/entities/Question';
+import DomainException from '../../../../domain/exceptions/DomainException';
 
 describe('Question', () => {
   it('deve criar uma pergunta válida com timestamp', () => {

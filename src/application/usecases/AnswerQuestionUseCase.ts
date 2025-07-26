@@ -1,6 +1,6 @@
-import LLMGateway from '../gateway/LLMGateway';
-import Question from '../entity/Question';
-import CatalogRepository from '../repository/CatalogRepository';
+import LLMGateway from '../../domain/gateways/LLMGateway';
+import Question from '../../domain/entities/Question';
+import CatalogRepository from '../../domain/repositories/CatalogRepository';
 
 export default class AnswerQuestionUseCase {
   constructor(
@@ -33,10 +33,10 @@ export default class AnswerQuestionUseCase {
       sendo que esse match de texto pode ser parcial.
 
       Horário de atendimento: 08:00 as 18:00;
-      Endereço: Avenida Sampaio Vidal, 123;
+      Endereço: Avenida Sampaio Vidal, 10024, Marília - SP;
 
-      Catalogo de Produtos: 
-      ${catalogInfo}    
+      Catalogo de Produtos:
+      ${catalogInfo}.
     `;
   }
 }

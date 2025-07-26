@@ -1,4 +1,4 @@
-import ItemCatalog from '../../../domain/entity/ItemCatalog';
+import ItemCatalog from '../../../../domain/entities/ItemCatalog';
 
 describe('ItemCatalog', () => {
   it('deve criar um item com descrição e valor', () => {

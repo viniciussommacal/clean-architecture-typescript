@@ -1,4 +1,4 @@
-import ItemCatalog from '../entity/ItemCatalog';
+import ItemCatalog from '../entities/ItemCatalog';
 
 export default interface ICatalogRepository {
   getAll(): ItemCatalog[];

@@ -1,7 +1,7 @@
-import AnswerQuestionUseCase from '../../../domain/useCase/AnswerQuestionUseCase';
-import LLMGateway from '../../../domain/gateway/LLMGateway';
-import CatalogRepository from '../../../domain/repository/CatalogRepository';
-import DomainException from '../../../../src/domain/exception/DomainException';
+import AnswerQuestionUseCase from '../../../../application/usecases/AnswerQuestionUseCase';
+import LLMGateway from '../../../../domain/gateways/LLMGateway';
+import CatalogRepository from '../../../../domain/repositories/CatalogRepository';
+import DomainException from '../../../../domain/exceptions/DomainException';
 
 describe('AnswerQuestionUseCase', () => {
   const mockLLM: jest.Mocked<LLMGateway> = {
